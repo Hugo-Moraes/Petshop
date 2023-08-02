@@ -1,0 +1,357 @@
+* {
+  margin: 0px;
+padding: 0px;
+
+}
+
+html, body {
+  min-height: 1800px; 
+}
+/* conteúdo main*/
+
+
+/*  Header  */
+/* Logo */
+header {
+width: 100%;
+height: 140px;
+background-color: #ffead8;
+
+}
+
+main header img {
+width: 120px;
+height: 120px;
+margin-top: 15px;
+margin-left: 130px;
+}
+
+/* Fim logo */
+
+/* Barra de Pesquisa */
+
+#pesquisa-container {
+display: flex;
+justify-content: center;
+margin-top: -110px;
+
+}
+
+#caixa-pesquisa {
+display: flex;
+align-items: center;
+background-color: #aaa7a7;
+padding: 4px;
+border-radius: 3px;
+}
+
+#caixa-pesquisa input[type="text"] {
+border: none;
+padding: 5px;
+font-size: 16px;
+width: 650px;
+height: 45px;
+margin: 0px;
+
+}
+
+#caixa-pesquisa button {
+border: none;
+background-color: #4CAF50;
+color: white;
+padding: 8px 12px;
+border-radius: 4px;
+cursor: pointer;
+height: 55px;
+width: 85px;
+margin-top: 9px;
+margin: 0px;
+}
+
+#caixa-pesquisa button:hover {
+background-color: #45a049;
+}
+
+/* Fim Barra de Pesquisa */
+
+/* Cadastre-se */
+#cadastro {
+display: flex;
+margin-left: auto;
+margin-right: 140px;
+margin-top: -60px;
+height: 60px;
+width: 130px;
+border: 1px solid #363535;
+border-radius: 5px;
+background-color: #F8EDE4;
+
+}
+
+#container-botao {
+display: flex;
+align-items: center;
+text-decoration: none;
+position: relative; /* Adicionado para posicionar corretamente a aba */
+cursor: pointer;
+padding-top:  10px;
+}
+
+#button-content {
+z-index: 1;
+display: flex;
+align-items: center;
+background-color: #F8EDE4;
+padding: 3px;
+border-radius: 3px;
+width: 100%;
+margin-right: 5px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+}
+
+#button-content img {
+
+height: 35px;
+width: auto;
+margin: 0;
+margin-bottom: 6px;
+}
+
+#button-content div {
+margin-left:8px;
+text-align: left;
+flex-grow: 1;
+}
+
+
+
+#button-content p {
+margin-left: 10px;
+text-align: left;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+padding-top:  10px;
+}
+
+
+
+
+
+#aba {
+display: none;
+position: absolute;
+top: 100%;
+left: 50%;
+transform: translateX(-50%);
+background-color: white;
+width: 230px;
+padding: 15px;
+border-radius: 5px;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+max-height: 0; /* Defina um valor fixo de max-height */
+overflow: hidden;
+transition: max-height 1s ease; /* Adicione a transição para a propriedade max-height */
+z-index: 9999;
+}
+
+#container-botao:hover #aba {
+display: block;
+max-height: 200px; /* Altura máxima da aba */
+opacity: 1;
+visibility: visible;}
+
+
+
+
+
+
+button {
+width: 100%;
+height: 45px;
+margin-bottom: 10px;
+background-color: #45a049;
+color: white;
+border: none;
+border-radius: 5px;
+}
+
+#aba a {
+cursor: pointer;
+}
+
+
+#aba p {
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fim Cadastre-se */
+
+/* segundo cabeçalho */
+
+#segundo-cabecalho {
+width: 100%;
+height: 40px;
+background-color: #c8b6a6;
+margin-top: 47px;
+}
+
+#segundo-cabecalho a {
+text-decoration: none;
+color: white;
+font-size: 20px;
+padding: 15px;
+display: inline-block;
+cursor: pointer;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+#container-links {
+margin-left: 110px;
+display: flex;
+align-items: center;
+height: 40px;
+}
+
+#segundo-cabecalho ul {
+display: inline;
+margin: 0;
+padding: 0;
+}
+
+#segundo-cabecalho li {
+display: inline-block;
+position: relative;
+}
+
+#segundo-cabecalho li:hover {
+background: #555;
+}
+
+#segundo-cabecalho li:hover ul {
+display: block;
+}
+
+#segundo-cabecalho ul ul {
+position: absolute;
+width: 200px;
+display: none;
+background: #555; /* cor da aba */
+margin-top: 0;
+z-index: 1;
+
+}
+
+#segundo-cabecalho ul ul li {
+display: block;
+z-index: 1;
+
+}
+
+#segundo-cabecalho ul ul li a {
+display: block;
+padding: 10px;
+color: white;
+text-decoration: none;
+z-index: 1;
+}
+
+#segundo-cabecalho ul ul li a:hover {
+background: #666;
+}
+
+#ultimo-item {
+position: absolute;
+right: 200px;
+top: 125px;
+}
+
+
+/* Fim segundo cabeçalho */
+
+
+/*  Fim Header  */
+
+#assinatura {
+width: 100%;
+height: 45px;
+background-color: #b8aea5;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #805F44;
+margin-top: 35px;
+}
+#assinatura img {
+width: 80px;
+height: 80px;
+}
+#assinatura p {
+font-size: 20px;
+}
+#assinatura a {
+font-size: 18px;
+color: #805F44;
+
+}
+/* fim do conteúdo main*/
+/* Começo Carrosel */
+
+#demo {
+  margin: auto;
+  margin-top: 30px;
+  width: 1210px;
+  height: 250px;
+  border-radius: 3px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(420%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.carousel-control-prev {
+  left: -1px;
+}
+
+.carousel-control-next {
+  right: -1px;
+}
+
+.custom-image {
+  width: 1210px;
+  height: 400px;
+}
+
+/* Fim Carrosel */
+/* fim do conteúdo main*/
+
+
+
+
+
+
+
+/* Começo Segunda Section */
+
+#alertas {
+  display: flex; 
+  margin-top: 200px;
+}
+#alertas button {
+  background-color: wheat;
+  margin-right: 10px; /* Adiciona um espaço entre os botões */
+}
+
+
+/* Fim da Segunda Section */

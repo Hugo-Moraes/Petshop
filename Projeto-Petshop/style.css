@@ -166,7 +166,7 @@ visibility: visible;}
 
 
 
-#botão {
+button {
 width: 100%;
 height: 45px;
 margin-bottom: 10px;
@@ -311,13 +311,21 @@ color: #805F44;
 .carousel-control-next {
   position: absolute;
   top: 50%;
-  transform: translateY(30%);
+  transform: translateY(420%);
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgb(0, 0, 0);
   border-radius: 5px;
+}
+
+.carousel-control-prev {
+  left: -1px;
+}
+
+.carousel-control-next {
+  right: -1px;
 }
 
 .custom-image {
@@ -335,23 +343,29 @@ color: #805F44;
 
 
 /* Começo Segunda Section */
+
 #alertas {
-  display: flex;
-  justify-content: center; /* centraliza horizontalmente */
+  display: flex; 
   margin-top: 200px;
-  margin-right: 200px;
+  display: flex; /* Define o elemento como um flex container */
+  justify-content: center; /* Centraliza horizontalmente os elementos filhos */
 
-  width: 50px;
-  height: 50px;
-}
 
-#alertas button {
-  background-color: #805F44;
-  margin-left: 10px;
-  margin-right: 10px;
   
 }
-
-
+#alertas button {
+  background-color: #c8b6a6;
+  color: black;
+  font-weight: bolder;
+  margin-right: 10px; /* Adiciona um espaço entre os botões */
+  width: 250px;
+  height: 55px;
+  border-radius: 8px;
+}
+#alertas img {
+  width: 60px;
+  height: 60px;
+  margin-left: -45px;
+}
 
 /* Fim da Segunda Section */
